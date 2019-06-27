@@ -1,0 +1,46 @@
+<div class="login-form" id="login">
+<header class="login-header" *ngIf="toggleLogin">
+    <div class="login-entry-box">
+        <h1 class="heading" >
+            <span class="heading-main">Login</span>
+        </h1>
+        <div class="box">
+            <div class="box-input">
+              <label>Email</label>
+              <input type="text" name="username" value="" class="input txt-username"/>
+              <label>Password</label>
+              <input type="password" name="password" value="" class="input txt-username"/>
+            </div>
+            <input type="button" class="btn btn-white" value="Login" (click)="login()">
+            <div class='signup-link'>
+              <label>New user? <a href="#signup" (click)="toggle()">Signup here</a></label>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<header class="login-header" *ngIf="!toggleLogin">
+  <div class="login-entry-box">
+      <h1 class="heading" id="signup">
+          <span class="heading-main">Signup</span>
+      </h1>
+      <div class="box">
+          <div class="box-input">
+            <label>Name</label>
+            <input type="text" name="username" value="" class="input txt-username"/>
+            <label>Email</label>
+            <input type="text" name="username" value="" class="input txt-username"/>
+            <label>Password</label>
+            <input type="password" name="password" value="" class="input txt-username"/>
+            <label>Confirm Password</label>
+            <input type="password" name="password" value="" class="input txt-username"/>
+          </div>
+          <input type="button" class="btn btn-white" value="Signup">
+          <div class='signup-link'>
+            <label>Already Member? <a href="#signup" (click)="toggle()">Login here</a></label>
+          </div>
+      </div>
+  </div>
+</header>
+</div>
