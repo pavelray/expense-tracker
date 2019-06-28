@@ -1,46 +1,77 @@
-<div class="login-form" id="login">
-<header class="login-header" *ngIf="toggleLogin">
-    <div class="login-entry-box">
-        <h1 class="heading" >
-            <span class="heading-main">Login</span>
-        </h1>
-        <div class="box">
-            <div class="box-input">
-              <label>Email</label>
-              <input type="text" name="username" value="" class="input txt-username"/>
-              <label>Password</label>
-              <input type="password" name="password" value="" class="input txt-username"/>
-            </div>
-            <input type="button" class="btn btn-white" value="Login" (click)="login()">
-            <div class='signup-link'>
-              <label>New user? <a href="#signup" (click)="toggle()">Signup here</a></label>
-            </div>
-        </div>
-    </div>
-</header>
+<div class="expense-container">
+  <h1>Add</h1>
+  <div class="entry-form">
+    <label class="lbl lbl-form">Amount</label>
+    <input type="text" name="amount" value="" class="input" />
+    <label class="lbl lbl-form">Type</label>
+    <select class="input">
+      <option></option>
+      <option>Food</option>
+      <option>Transport</option>
+      <option>Movies</option>
+    </select>
 
-
-<header class="login-header" *ngIf="!toggleLogin">
-  <div class="login-entry-box">
-      <h1 class="heading" id="signup">
-          <span class="heading-main">Signup</span>
-      </h1>
-      <div class="box">
-          <div class="box-input">
-            <label>Name</label>
-            <input type="text" name="username" value="" class="input txt-username"/>
-            <label>Email</label>
-            <input type="text" name="username" value="" class="input txt-username"/>
-            <label>Password</label>
-            <input type="password" name="password" value="" class="input txt-username"/>
-            <label>Confirm Password</label>
-            <input type="password" name="password" value="" class="input txt-username"/>
-          </div>
-          <input type="button" class="btn btn-white" value="Signup">
-          <div class='signup-link'>
-            <label>Already Member? <a href="#signup" (click)="toggle()">Login here</a></label>
-          </div>
-      </div>
+    <label class="lbl lbl-form">Date</label>
+    <input type="date" name="date" value="" class="input" />
+    <button class="btn btn-blue">Add</button>
   </div>
-</header>
+  <div class="grid-content">
+    <table class="table">
+       <tr>
+         <th>Amount</th>
+         <th>Type</th>
+         <th>Date</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>North/South</td>
+          <td>Simon Crowther</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris spécialités</td>
+          <td>Marie Bertrand</td>
+          <td>France</td>
+        </tr>
+    </table>
+  </div>
 </div>

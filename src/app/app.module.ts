@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExpenceFormComponent } from './expence-form/expence-form.component';
+import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
+import { SigninSignupComponent } from './signin-signup/signin-signup.component';
 
 const route: Routes = [
   {
@@ -18,7 +20,29 @@ const route: Routes = [
   },
   {
     path: 'dashboard',
-    component:  DashboardComponent
+    component:  DashboardComponent,
+    children: [
+      {
+        path: '',
+        component: DashboardHomeComponent
+      },
+      {
+        path: 'home',
+        component: DashboardHomeComponent
+      },
+      {
+        path: 'expenses',
+        component: ExpenceFormComponent
+      },
+      {
+        path: 'search',
+        component: DashboardHomeComponent
+      },
+      {
+        path: 'report',
+        component: DashboardHomeComponent
+      }
+    ]
   }
 ];
 
@@ -27,7 +51,9 @@ const route: Routes = [
     AppComponent,
     HomeComponent,
     ExpenceFormComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardHomeComponent,
+    SigninSignupComponent
   ],
   imports: [
     BrowserModule,

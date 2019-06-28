@@ -1,3 +1,36 @@
-<p>
-  dashboard works!
-</p>
+<div class="content">
+    <div class="side-bar">
+      <div class="heading">
+        <h3>Expense Tracker</h3>
+      </div>
+      <div class='side-bar-menu'>
+          <ul>
+              <li>
+                <a routerLink='home'>Dashboard</a>
+              </li>
+              <li>
+                <a routerLink='expenses'>Expenses</a>
+              </li>
+              <li>
+                <a routerLink='dashboard/search'>Search</a>
+              </li>
+              <li>
+                <a routerLink='dashboard/report'>Report</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+    <div class="dashboard-content">
+      <div class="header-bar">
+        <div class="logout">
+          <a routerLink='/home' class="btn btn-logout">Logout</a>
+        </div>
+      </div>
+      <div class="content-body">
+          <router-outlet></router-outlet>
+      </div>
+
+    </div>
+</div>
+
+

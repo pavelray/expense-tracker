@@ -1,0 +1,94 @@
+.login-form{
+  height: 80vh;
+  margin-bottom: 20px;
+}
+
+.login-header{
+  position: relative;
+  background-color: bisque;
+
+
+}
+
+.login-entry-box{
+  left:50%;
+  transform: translate(-50%);
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding-top: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.heading-main{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 8px;
+}
+
+.box{
+  margin-top: 50px;
+  padding: 20px 50px;
+  background-color: #89e9ce;
+  font-size: 35px;
+  text-align: center;
+
+}
+
+.box-input{
+  text-align: left;
+
+}
+
+.box label{
+  font-size: 15px;
+  color: #fff
+}
+
+.input{
+  font-weight: 400;
+  box-sizing: border-box;
+  color: inherit;
+  width: 100%;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 10px 10px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.btn{
+  margin-top: 20px;
+  border-radius: 100px;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px rgba(0,0,0,.4);
+}
+
+.btn-white{
+  background-color: #fff;
+  color:#84fab0;
+  font-weight: 700;
+}
